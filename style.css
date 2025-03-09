@@ -1,0 +1,54 @@
+header {
+  background-color: rgb(182, 173, 230);
+  border-radius: 0% 0% 30% 30%;
+}
+header div img {
+  margin: 0 auto;
+}
+header div a {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-family: Ubuntu;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  body a {
+    text-decoration: none;
+  }
+  header {
+    background-color: rgb(182, 173, 230);
+    display: flex;
+    border-radius: 0% 0% 30% 30%;
+  }
+  header div {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  header div a, header div a:active, header div a:hover {
+    color: white;
+    font-size: 20px;
+    display: inline;
+  }
+  .center {
+    display: flex;
+  }
+  .center-authorisation-fields {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid lightsteelblue;
+  }
+  .center-authorisation-links {
+    color: lightblue;
+  }
+  .center-authorisation-links:hover {
+    color: grey;
+  }
+  .center-authorisation-button {
+    width: 100%;
+    background-color: lightsteelblue;
+    border: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
