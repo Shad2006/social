@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,7 +24,9 @@
                 <p>Login:</p>
                 <input class="center-authorisation-fields" type="email" placeholder="adress@domain.zone">
                 <p>password: <a class="center-authorisation-links" href="#">Visible password</a></p>
-                <input class="center-authorisation-fields" type="password" placeholder="*****">
+                <input class="center-authorisation-fields" type="password" placeholder="*****" id="passwordInput">
+
+                
                 <p><a class="center-authorisation-links" href="#">Forgot your password?</a>
                 <a href="#">Sign in</a></p>
                 <input class="center-authorisation-button" type="submit">
@@ -30,3 +35,16 @@
     </div>
 </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('togglePassword').addEventListener('click', function(e) {
+        e.preventDefault();
+        const passwordInput = document.getElementById('passwordInput');
+        const isPassword = passwordInput.type === 'password';
+        
+        passwordInput.type = isPassword ? 'text' : 'password';
+        this.textContent = isPassword ? 'Hide password' : 'Visible password';
+    });
+});
+
+    </script>
