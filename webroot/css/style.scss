@@ -1,0 +1,55 @@
+header {
+    background-color: rgb(182, 173, 230);
+    border-radius: 0% 0% 30% 30%;
+    & div{
+    & img{
+        margin: 0 auto;
+    }
+    & a{
+        display: none;
+    }
+}}
+@media (min-width: 1000px){
+    body {font-family: Ubuntu;
+        width: 1200px;
+        margin: 0 auto;
+        & a{
+            text-decoration: none;
+        }
+    }
+header{
+    background-color: rgb(182, 173, 230);
+    display: flex;
+    border-radius: 0% 0% 30% 30%;
+    & div{
+        margin: 0 auto;
+        padding: 10px;
+        & a, a:active, a:hover{
+            color: white;
+            font-size: 20px;
+            display: inline;
+    }
+    }
+}
+.center{
+    display: flex;
+    &-authorisation{
+        &-fields{
+            width: 100%;
+            border: 0px;
+            border-bottom: 1px solid lightsteelblue;
+        }
+        &-links{
+            color: lightblue;
+        }
+        &-links:hover{
+            color: grey;
+        }
+        &-button{
+            width: 100%;
+            background-color: lightsteelblue;
+            border: 0px;
+        }
+    }
+}
+}
