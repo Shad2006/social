@@ -1,0 +1,12 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "users" (
+	"id"	INTEGER NOT NULL,
+	"name"	TEXT,
+	"surname"	TEXT,
+	"age"	INTEGER,
+	"birthday"	TEXT,
+	"tag"	TEXT,
+	"img"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+COMMIT;

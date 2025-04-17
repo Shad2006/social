@@ -1,0 +1,118 @@
+2025-04-05 09:53:24 error: [ReflectionException] Class Cake\Mailer\TransportFactory does not have a property named _config in /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php on line 70
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:40
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-04-05 09:58:32 error: [BadMethodCallException] Cannot reconfigure existing key "default" in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php on line 91
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php:83
+- [internal]:??
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:40
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-04-05 15:14:54 error: [BadMethodCallException] Cannot reconfigure existing key "default" in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php on line 91
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php:83
+- [internal]:??
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:40
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-04-05 15:37:54 error: [BadMethodCallException] Cannot reconfigure existing key "default" in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php on line 91
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php:83
+- [internal]:??
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:40
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-04-05 15:48:01 error: [BadMethodCallException] Cannot reconfigure existing key "default" in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php on line 91
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php:83
+- [internal]:??
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:40
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-04-05 15:50:08 error: [BadMethodCallException] Cannot reconfigure existing key "default" in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php on line 91
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php:83
+- [internal]:??
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:72
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-04-05 15:50:20 error: [BadMethodCallException] Cannot reconfigure existing key "default" in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php on line 91
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php:83
+- [internal]:??
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:72
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-04-05 15:50:37 error: [BadMethodCallException] Cannot reconfigure existing key "default" in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php on line 91
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/StaticConfigTrait.php:83
+- [internal]:??
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Panel/MailPanel.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/ToolbarService.php:224
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/shad/Загрузки/cakevk/social/webroot/index.php:72
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1

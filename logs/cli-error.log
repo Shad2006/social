@@ -1,0 +1,59 @@
+2025-04-05 15:38:58 error: [Cake\Database\Exception\DatabaseException] SQLSTATE[HY000]: General error: 26 file is not a database in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 160
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/ORM/Table.php:528
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/bake/src/Command/ModelCommand.php:111
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/bake/src/Command/ModelCommand.php:94
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/BaseCommand.php:190
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/shad/Загрузки/cakevk/social/bin/cake.php:12
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[HY000]: General error: 26 file is not a database in /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Driver/Sqlite.php on line 201
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Driver/Sqlite.php:201
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Connection.php:388
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Connection.php:395
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Connection.php:410
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Connection.php:417
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:158
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:118
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/ORM/Table.php:528
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/bake/src/Command/ModelCommand.php:111
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/bake/src/Command/ModelCommand.php:94
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/BaseCommand.php:190
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/shad/Загрузки/cakevk/social/bin/cake.php:12
+- [main]:
+
+2025-04-05 15:46:20 error: [PDOException] SQLSTATE[HY000]: General error: 26 file is not a database in /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 226
+Stack Trace:
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:226
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:247
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/SQLiteAdapter.php:323
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/SQLiteAdapter.php:369
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:132
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/SQLiteAdapter.php:194
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php:163
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php:469
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/migrations/src/CakeAdapter.php:51
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:83
+- /home/shad/Загрузки/cakevk/social/vendor/robmorgan/phinx/src/Phinx/Console/Command/Create.php:146
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/migrations/src/Command/Phinx/CommandTrait.php:37
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/migrations/src/Command/Phinx/Create.php:93
+- /home/shad/Загрузки/cakevk/social/vendor/symfony/console/Command/Command.php:298
+- /home/shad/Загрузки/cakevk/social/vendor/symfony/console/Application.php:1040
+- /home/shad/Загрузки/cakevk/social/vendor/symfony/console/Application.php:301
+- /home/shad/Загрузки/cakevk/social/vendor/symfony/console/Application.php:171
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:126
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/BaseCommand.php:190
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/migrations/src/Command/MigrationsCommand.php:198
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/shad/Загрузки/cakevk/social/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/shad/Загрузки/cakevk/social/bin/cake.php:12
+- [main]:
+
