@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="header-logo">
-            <img src="https://github.com/favicon.ico">
-        </div>
-        <div class="header-about">
-            <a href="#">About us</a>
-        </div>
-    </header>
-    <div class="center">
-        <div class="center-authorisation">
-            <form action="login.php" method="post">
-                <p>Login:</p>
-                <input class="center-authorisation-fields" type="email" placeholder="adress@domain.zone">
-                <p>password: <a class="center-authorisation-links" href="#">Visible password</a></p>
-                <input class="center-authorisation-fields" type="password" placeholder="*****">
-                <p><a class="center-authorisation-links" href="#">Forgot your password?</a>
-                <a href="#">Sign in</a></p>
-                <input class="center-authorisation-button" type="submit">
-            </form>
-        </div>
-    </div>
-</body>
-</html>
 <?php
 /**
  * The Front Controller for handling every request
@@ -46,7 +14,7 @@
  * @since         0.2.9
  * @license       MIT License (https://opensource.org/licenses/mit-license.php)
  */
-/*
+
 // Check platform requirements
 require dirname(__DIR__) . '/config/requirements.php';
 

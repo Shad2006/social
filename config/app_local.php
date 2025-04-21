@@ -25,7 +25,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => env('SECURITY_SALT', 'bf761f84f9e780c19628ddbadf31dde9c4a83d52bedc57403a9f5c614471dbf2'),
+        'salt' => env('SECURITY_SALT', '33c065a80bbb6f230ba663330b86e8cf886f243b3870d0d7f7e41e9714793c1c'),
     ],
 
     /*
@@ -35,16 +35,25 @@ return [
      * See app.php for more configuration options.
      */
     'Datasources' => [
-    'default' => [
+        'default' => [
         'className' => 'Cake\Database\Connection',
         'driver' => 'Cake\Database\Driver\Sqlite',
-        'database' => ROOT . DS . 'users.sql',
-        'encoding' => 'utf8',
-        'cacheMetadata' => true,
-        'quoteIdentifiers' => false,
-    ],
-],
+        'database' => ROOT . DS . 'users.db',
+        ],
 
+        /*
+         * The test connection is used during the test suite.
+         */
+        'test' => [
+            'host' => 'localhost',
+            //'port' => 'non_standard_port_number',
+            'username' => 'my_app',
+            'password' => 'secret',
+            'database' => 'test_myapp',
+            //'schema' => 'myapp',
+            'url' => env('DATABASE_TEST_URL', 'sqlite://127.0.0.1/tmp/tests.sqlite'),
+        ],
+    ],
 
     /*
      * Email configuration.
