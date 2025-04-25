@@ -18,7 +18,7 @@ header {
     }
     body a, a:hover {
       text-decoration: none;
-      color: aqua !important;
+      color: lightsteelblue !important;
     }
     header {
       background-color: rgb(182, 173, 230);
@@ -54,4 +54,7 @@ header {
 
       border: 0px;
     }
-  }/*# sourceMappingURL=style.css.map */
+    button{
+      background-color: lightsteelblue !important;
+    }
+  }

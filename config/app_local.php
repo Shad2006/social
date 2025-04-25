@@ -16,6 +16,10 @@ return [
      * true: Errors and warnings shown.
      */
     'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
+    'Session' => [
+    'defaults' => 'php',
+    'autoStart' => false, 
+],
 
     /*
      * Security and encryption configuration
@@ -38,7 +42,7 @@ return [
         'default' => [
         'className' => 'Cake\Database\Connection',
         'driver' => 'Cake\Database\Driver\Sqlite',
-        'database' => ROOT . DS . 'users.db',
+        'database' => CONFIG. 'schema/users.db',
         ],
 
         /*

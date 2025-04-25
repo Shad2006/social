@@ -21,16 +21,16 @@ Router::scope('/', function ($routes) {
         ['controller' => 'Users', 'action' => 'view'],
         ['id' => '\d+', 'pass' => ['id'], 'methods' => ['GET']]
     );
-
+    $routes->connect('/home', ['controller' => 'Users', 'action' => 'home']);
     $routes->connect(
         '/edit/{id}',
         ['controller' => 'Users', 'action' => 'edit'],
         ['id' => '\d+', 'pass' => ['id'], 'methods' => ['GET', 'POST', 'PUT']]
     );
 
-    // Главная страница
+    
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'home']);
     
-    // Оставшиеся маршруты
+    
     $routes->fallbacks(DashedRoute::class);
 });

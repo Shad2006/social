@@ -1,4 +1,4 @@
-<?
+<?php
 namespace App\Middleware;
 use Cake\Http\Response;
 use Cake\Http\ServerRequest;
