@@ -70,4 +70,28 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+    public function home()
+    {
+        $session = $this->request->getSession();
+        $userId = $session->read('user_id');
+        
+        if (!$userId) {
+            return $this->redirect(['controller' => 'Auth', 'action' => 'login']);
+        }
+
+        // Загружаем модель Users
+        $this->loadModel('Users');
+        
+        try {
+          
+            $userData = $this->Users->get($userId);
+            $this->set(compact('userData'));
+            
+        } catch (\Cake\Datasource\Exception\RecordNotFoundException $e) {
+           
+            $session->delete('user_id');
+            return $this->redirect(['action' => 'login']);
+        }
+    }
+
 }
