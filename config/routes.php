@@ -21,13 +21,19 @@ Router::scope('/', function ($routes) {
         ['controller' => 'Users', 'action' => 'view'],
         ['id' => '\d+', 'pass' => ['id'], 'methods' => ['GET']]
     );
+    $routes->connect(
+        '/profile/:tag', 
+        ['controller' => 'Users', 'action' => 'viewByTag'],
+        ['pass' => ['tag'], 'tag' => '@.*'] 
+    );
     $routes->connect('/home', ['controller' => 'Users', 'action' => 'home']);
+    $routes->connect('/recovery', ['controller' => 'Auth', 'action' => 'recovery']);
     $routes->connect(
         '/edit/{id}',
         ['controller' => 'Users', 'action' => 'edit'],
         ['id' => '\d+', 'pass' => ['id'], 'methods' => ['GET', 'POST', 'PUT']]
     );
-
+    $routes->connect('/admin', ['controller' => 'Admin', 'action' => 'admin']);
     
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'home']);
     

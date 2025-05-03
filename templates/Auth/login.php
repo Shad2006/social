@@ -4,11 +4,11 @@
             <div class="center-authorisation">
 <form method="post">
                 <p>Адрес почты:</p>
-                <input class="center-authorisation-fields" type="email" placeholder="adress@domain.zone">
+                <input class="center-authorisation-fields" type="email" name="email" placeholder="adress@domain.zone">
                 <p>Пароль: <a class="center-authorisation-links" id="visible" href="#">Посмотреть пароль</a>
                 <a class="center-authorisation-links" id="unvisible" href="#">Скрыть пароль</a></p>
-                <input class="center-authorisation-fields" type="password"id="password" placeholder="*****">
-                <p><a class="center-authorisation-links" href="#">Забыли пароль? Сменить?</a>
+                <input class="center-authorisation-fields" type="password"id="password" name="password" placeholder="*****">
+                <p><a class="center-authorisation-links" href="/recovery">Забыли пароль? Сменить?</a>
                 <script >
                     let visible = document.getElementById('visible');
                     let unvisible = document.getElementById('unvisible');

@@ -22,6 +22,18 @@ class UsersController extends AppController
         $this->set(compact('user'));
         $this->viewBuilder()->setTemplate('profile');
     }
+    public function viewByTag($tag = null)
+{
+    $tag = ltrim($tag, '@');
+    
+    $user = $this->Users->find()
+        ->where(['tag' => $tag])
+        ->firstOrFail();
+
+    $this->set(compact('user'));
+    $this->viewBuilder()->setTemplate('profile');
+}
+
 
     public function home()
     {
@@ -32,7 +44,6 @@ class UsersController extends AppController
             return $this->redirect(['controller' => 'Auth', 'action' => 'login']);
         }
 
-        // Загружаем модель Users
         $this->loadModel('Users');
         
         try {
