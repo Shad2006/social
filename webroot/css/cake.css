@@ -1,63 +1,162 @@
-.top-nav{
+.top-nav {
   display: none;
 }
+
 header {
+  background-color: rgb(182, 173, 230);
+  border-radius: 0% 0% 30% 30%;
+}
+
+header div img {
+  margin: 0 auto;
+}
+
+header div a {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-family: Ubuntu !important;
+    width: 1200px;
+    margin: 0 auto;
+
+  }
+
+  body a
+   {
+    color: #2B587A;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover{
+    color: #2B587A;
+    text-decoration: solid;
+  }
+
+  header {
     background-color: rgb(182, 173, 230);
+    display: flex;
     border-radius: 0% 0% 30% 30%;
   }
-  header div img {
-    margin: 0 auto;
-  }
-  header div a {
-    display: none;
-  }
-  
-  @media (min-width: 1000px) {
-    body {
-      font-family: Ubuntu !important;
-      width: 1200px;
-      margin: 0 auto;
-      
-    }
-    body a, a:hover {
-      text-decoration: none;
-      color: lightsteelblue !important;
-    }
-    header {
-      background-color: rgb(182, 173, 230);
-      display: flex;
-      border-radius: 0% 0% 30% 30%;
-    }
-    header div {
-      margin: 0 auto;
-      padding: 10px;
-    }
-    header div a, header div a:active, header div a:hover {
-      color: white;
-      font-size: 20px;
-      display: inline;
-    }
-    .center {
-      display: flex;
-    }
-    .center-authorisation-fields {
-      width: 100%;
-      border: 0px;
-      border-bottom: 1px solid lightsteelblue;
-    }
-    .center-authorisation-links {
-      color: lightblue;
-    }
-    .center-authorisation-links:hover {
-      color: grey;
-    }
-    .center-authorisation-button {
-      width: 100%;
-      background-color: lightsteelblue !important;
 
-      border: 0px;
-    }
-    button{
-      background-color: lightsteelblue !important;
-    }
+  header div {
+    margin: 0 auto;
+    padding: 10px;
   }
+
+  header div a,
+  header div a:active,
+  header div a:hover {
+    color: white;
+    font-size: 20px;
+    display: inline;
+  }
+
+  .center {
+    display: flex;
+  }
+  .center-authorisation{
+    padding: 25px;
+    border-right: 2px lightgrey solid;
+  }
+  .center-authorisation-fields {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid lightsteelblue;
+  }
+
+  .center-authorisation-links {
+    color: #2B587A;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+  }
+
+  .center-authorisation-links:hover {
+    color: grey;
+  }
+
+  .center-authorisation-button {
+    width: 100%;
+    border: 1px solid #45688E !important;
+    background: #5D81A7 !important;
+  }
+
+  button {
+    border: 1px solid #45688E !important;
+    background: #5D81A7 !important;
+  }
+
+  .center h1 {
+    color: #45688E;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    overflow: hidden;
+    margin: 20px;
+    border-bottom: 1px lightgrey solid;
+  }
+
+  li::marker {
+    list-style: circle !important;
+     color: #758EAC;
+  }
+  .profile-name{
+    padding: 7px 10px;
+  background-color: #E9EDF1;
+    font-weight: bold;
+  font-size: 20px;
+  font-family: 'Ubuntu';
+  color: #607387;
+  }
+  .profile-info{
+    padding: 10px;
+    display: inline !important;
+  }
+  .profile-info-name{
+    border-bottom: 1px solid lightcyan;
+  color: #45688E;
+  font-size: 25px;
+  font-weight: bold;
+  }
+  .profile-info-text{
+    display: flex;
+    
+  }
+  .profile-info-text b{
+    display: block;
+    width: 50px;
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+  }
+  .profile-info-text span{
+    margin-left: 50px;
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .registration-title{
+    border-bottom: 1px solid lightgrey;
+    font-weight: 500;
+  color: #45668E;
+  font-size: 25px;
+  }
+  .registration-label{
+  color: grey;
+  font-size: 20px;
+  }
+  label{
+    font-weight: 300;
+  }
+}
+.admin h1, .users h1{
+  padding: 7px 10px;
+  background-color: #E9EDF1;
+    font-weight: bold;
+  font-size: 20px;
+  font-family: 'Ubuntu';
+  color: #607387;
+}

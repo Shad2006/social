@@ -39,7 +39,7 @@ class UsersController extends AppController
     {
         $session = $this->request->getSession();
         $userId = $session->read('user_id');
-        
+        $username = $session->read('name');
         if (!$userId) {
             return $this->redirect(['controller' => 'Auth', 'action' => 'login']);
         }
