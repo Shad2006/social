@@ -160,3 +160,10 @@ header div a {
   font-family: 'Ubuntu';
   color: #607387;
 }
+.chat-messages{
+  background-color: #E9EDF1;
+}
+.content{
+  background-color: white;
+  
+}
