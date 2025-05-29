@@ -7,7 +7,8 @@ class AuthController extends AppController {
 {
     parent::initialize();
     $this->loadModel('Users'); 
-}public function login() {
+}
+public function login() {
     if ($this->request->is('post')) {
         $email = $this->request->getData('email');
         $password = $this->request->getData('password');
@@ -19,6 +20,16 @@ class AuthController extends AppController {
             ->where(['email' => $email]) 
                         ->first();
         if ($user && password_verify($password, $user->password)) {
+            if ($user->blocked !=1){
+            $session = $this->request->getSession();
+            $session->write([
+                'user_id' => $user->id,
+                'user_email' => $user->email
+            ]);
+            return $this->redirect(['controller' => 'Users', 'action' => 'home/']);}
+            else{
+                $this->Flash->error('Вы заблокированы');
+            }
         } else {
             $this->Flash->error('Неверные данные');
         }
@@ -46,7 +57,7 @@ class AuthController extends AppController {
                 'surname' => $data['surname'],
                 'birthday' => $data['birthday'],
                 'phone' => $data['phone'],
-                'access_rights' => 1,
+                'access_rights' => 0,
                 'created' => date('Y-m-d H:i:s'),
                 'modified' => date('Y-m-d H:i:s')
             ];

@@ -1,3 +1,4 @@
+<h1 class="registration-title">Восстановление доступа к профилю</h1>
 <div class="users form">
     <?= $this->Form->create() ?>
     <fieldset>
@@ -13,3 +14,4 @@
     <?= $this->Form->button(__('Сменить пароль')) ?>
     <?= $this->Form->end() ?>
 </div>
+<a href="/home">К профилю</a>

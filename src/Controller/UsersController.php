@@ -39,7 +39,7 @@ class UsersController extends AppController
     {
         $session = $this->request->getSession();
         $userId = $session->read('user_id');
-        
+        $username = $session->read('name');
         if (!$userId) {
             return $this->redirect(['controller' => 'Auth', 'action' => 'login']);
         }
@@ -56,15 +56,21 @@ class UsersController extends AppController
             $session->delete('user_id');
             return $this->redirect(['action' => 'login']);
         }
+        
     }
 
     public function edit($id = null)
     {
-        $sessionUser = $this->request->getSession()->read('User');
-        if ($sessionUser->id != $id) {
+        $user = $this->Users->get($id, [
+            'contain' => [],
+        ]);
+
+        $this->set(compact('user'));
+        $this->viewBuilder()->setTemplate('edit');
+        /*if ($userId != $id) {
             $this->Flash->error('Нет прав доступа');
             return $this->redirect($this->referer());
-        }
+        }*/
 
         $user = $this->Users->get($id);
         
@@ -88,18 +94,23 @@ class UsersController extends AppController
         $this->set(compact('user'));
     }
 
-    private function handleFileUpload($file)
-    {
-        $uploadPath = WWW_ROOT . 'img' . DS . 'uploads' . DS;
-        $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
-        $filename = uniqid() . ".$ext";
-        
-        if (!move_uploaded_file($file['tmp_name'], $uploadPath . $filename)) {
-            throw new \Exception("Ошибка загрузки файла");
-        }
-        
-        return $filename;
+    private function handleFileUpload($uploadedFile)
+{
+    // Проверяем директорию
+    $uploadPath = WWW_ROOT . 'img' . DS . 'uploads' . DS;
+    if (!is_dir($uploadPath)) {
+        mkdir($uploadPath, 0775, true);
     }
+
+    // Генерируем уникальное имя
+    $extension = pathinfo($uploadedFile->getClientFilename(), PATHINFO_EXTENSION);
+    $filename = uniqid('img_', true) . '.' . $extension;
+
+    // Сохраняем файл
+    $uploadedFile->moveTo($uploadPath . $filename);
+
+    return $filename;
+}
 
     public function beforeFilter(EventInterface $event)
     {

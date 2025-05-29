@@ -28,6 +28,8 @@ Router::scope('/', function ($routes) {
     );
     $routes->connect('/home', ['controller' => 'Users', 'action' => 'home']);
     $routes->connect('/recovery', ['controller' => 'Auth', 'action' => 'recovery']);
+    $routes->connect('/chat', ['controller' => 'Chat', 'action' => 'index']);
+    $routes->connect('/chat/messagesto/*', ['controller' => 'Chat', 'action' => 'messageto']);
     $routes->connect(
         '/edit/{id}',
         ['controller' => 'Users', 'action' => 'edit'],
@@ -36,6 +38,7 @@ Router::scope('/', function ($routes) {
     $routes->connect('/admin', ['controller' => 'Admin', 'action' => 'admin']);
     
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'home']);
+    $routes->connect('/chat', ['controller' => 'Chat', 'action' => 'index']);
     
     
     $routes->fallbacks(DashedRoute::class);
